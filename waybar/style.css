@@ -1,0 +1,196 @@
+* {
+border: none;
+border-radius: 0;
+font-family: "JetBrainsMono Nerd Font", monospace;
+font-size: 13pt;
+min-height: 0;
+}
+
+/* Main bar container */
+window#waybar {
+    background-color: rgba(20, 22, 30, 0.8);
+    border-radius: 12px;
+    padding: 4px 8px;
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Each entry: Suspend / Power Down / Hibernate / Reboot */
+menuitem {
+  padding: 6px 18px;
+  font-weight: 500;
+}
+
+/* Hover highlight */
+menuitem:hover {
+  background: #2f3138;
+  color: #ffffff;
+}
+
+/* Optional: separator thinner & subtle */
+separator,
+GtkSeparatorMenuItem,
+menuitem > separator {
+  margin: 4px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Global module styling */
+#workspaces button,
+#clock,
+#custom-logo,
+#pulseaudio,
+#network,
+#battery,
+#cpu,
+#memory,
+#custom-power,
+#tray,
+#mode,
+#window {
+padding: 0 8px;
+margin: 0 3px;
+border-radius: 10px;
+background: rgba(35, 38, 52, 0.9);
+color: #cdd6f4;
+}
+
+/* Hover effects */
+#workspaces button:hover,
+#clock:hover,
+#custom-logo:hover,
+#pulseaudio:hover,
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover {
+background: rgba(88, 91, 112, 0.9);
+}
+
+/* Left / center / right groups */
+.modules-left {
+    margin-left: 4px;
+}
+
+.modules-right {
+    margin-right: 4px;
+}
+
+/* Workspaces */
+#workspaces {
+margin: 0 4px;
+}
+
+#workspaces button {
+padding: 0 10px;
+background: transparent;
+color: #7f849c;
+box-shadow: none;
+}
+
+#workspaces button.active {
+background: #89b4fa;
+color: #1e1e2e;
+font-weight: bold;
+}
+
+#workspaces button.urgent {
+background: #f38ba8;
+color: #1e1e2e;
+}
+
+/* Custom logo */
+#custom-logo {
+font-size: 14pt;
+padding: 0 10px;
+background: linear-gradient(135deg, #89b4fa, #cba6f7);
+color: #1e1e2e;
+font-weight: 600;
+}
+
+#custom-power {
+    padding: 0 12px;        /* makes the pill wider */
+    /*margin-right: 10px;      prevents it from touching the bar edge */
+    min-width: 20px;        /* ensures icon cannot be compressed */
+
+    font-weight: bold;
+}
+
+/* Clock */
+#clock {
+background: rgba(49, 50, 68, 0.9);
+}
+
+/* PulseAudio (volume) */
+#pulseaudio {
+background: rgba(49, 50, 68, 0.9);
+}
+
+#pulseaudio.muted {
+color: #f9e2af;
+background: rgba(180, 190, 254, 0.15);
+}
+
+/* Network */
+#network.disconnected {
+color: #f38ba8;
+}
+
+/* Battery states */
+#battery.good {
+color: #a6e3a1;
+}
+
+#battery.warning {
+color: #f9e2af;
+}
+
+#battery.critical {
+color: #f38ba8;
+animation: blink 1s infinite;
+}
+
+/* CPU / Memory */
+#cpu,
+#memory {
+background: rgba(49, 50, 68, 0.9);
+}
+
+/* System tray */
+#tray {
+padding: 0 6px;
+background: transparent;
+}
+
+/* Subtle blinking for critical battery */
+@keyframes blink {
+    0% {
+        background-color: rgba(243, 139, 168, 0.1);
+    }
+    50% {
+        background-color: rgba(243, 139, 168, 0.4);
+    }
+    100% {
+        background-color: rgba(243, 139, 168, 0.1);
+    }
+}
+
+/* === Popup menus (power menu etc.) === */
+menu {
+  background: #202026;
+  color: #e5e5e5;
+  border-radius: 14px;
+  padding: 6px 0;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  /* fake shadow similar to GNOME popups */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+
+

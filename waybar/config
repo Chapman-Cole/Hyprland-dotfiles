@@ -1,0 +1,140 @@
+{
+  // Global bar settings
+  "layer": "top",                  // top | bottom
+  "position": "top",
+  "height": 30,
+  "spacing": 6,
+  "margin-top": 6,
+  "margin-left": 6,
+  "margin-right": 6,
+  "margin-bottom": 0,
+
+  // Use your favorite font here
+  "font": "JetBrainsMono Nerd Font 11",
+
+  // Left / center / right modules
+  "modules-left": [
+    "custom/logo",
+    "hyprland/workspaces",             // or "hyprland/workspaces" if you use Hyprland
+    "hyprland/mode"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "battery",
+    "cpu",
+    "memory",
+    "custom/power",
+    "tray"
+  ],
+
+  // ------- CUSTOM MODULES -------
+
+  "custom/logo": {
+    "format": "",                 // change to your distro icon
+    "tooltip": "Launcher",
+    "on-click": "/home/Cole/.config/rofi/launchers/type-6/launcher.sh", // or rofi, fuzzel, etc.
+    "interval": 0
+  },
+
+  "custom/power": {
+    "format": "⏻",              // the icon shown in the bar
+    "tooltip": false,           // optional
+    "on-click": "/home/Cole/.config/rofi/powermenu/type-5/powermenu.sh"
+    //"menu": "on-click",         // open menu on left-click
+    //"menu-file": "~/.config/waybar/power_menu.xml",
+    //"menu-actions": {
+    //  "suspend":   "systemctl suspend && hyprlock",
+    //  "poweroff":  "systemctl poweroff",
+    //  "hibernate": "systemctl hibernate && hyprlock",
+    //  "reboot":    "systemctl reboot"
+    //}
+  },
+
+  // ------- CORE MODULES ---------
+
+  // Workspaces (sway); for Hyprland, replace with "hyprland/workspaces"
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "enable-bar-scroll": true,
+    "all-outputs": true,
+    "format": "{name}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "default": ""
+    }
+  },
+
+  "hyprland/mode": {
+    "format": "<span>{}</span>",
+    "tooltip": false
+  },
+
+  "clock": {
+  "format": "{:%a %b %d  %I:%M%p}",
+  "format-alt": "{:%Y-%m-%d %I:%M:%S%p}",
+  "tooltip-format": "{:%Y-%m-%d %I:%M:%S%p}",
+  "interval": 1,
+  "tooltip": true
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "  muted",
+    "on-click": "pavucontrol",
+    "scroll-step": 2,
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{ifname} via {gwaddr}\nIP: {ipaddr}",
+    "interval": 5
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time}",
+    "interval": 30,
+    "states": {
+      "good": 80,
+      "warning": 30,
+      "critical": 15
+    },
+    "format-icons": [
+      "󰁺", "󰁼", "󰁾", "󰂀", "󰁹"
+    ]
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 2,
+    "tooltip": true
+  },
+
+  "memory": {
+    "format": " {used:0.1f}G",
+    "interval": 5,
+    "tooltip": true
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  }
+}
