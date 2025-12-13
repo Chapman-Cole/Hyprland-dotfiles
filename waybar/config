@@ -81,8 +81,8 @@
 
   "clock": {
   "format": "{:%a %b %d  %I:%M%p}",
-  "format-alt": "{:%Y-%m-%d %I:%M:%S%p}",
-  "tooltip-format": "{:%Y-%m-%d %I:%M:%S%p}",
+  "format-alt": "{:%m/%d/%Y %I:%M:%S%p}",
+  "tooltip-format": "{:%m/%d/%Y %I:%M:%S%p}",
   "interval": 1,
   "tooltip": true
   },
