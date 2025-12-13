@@ -3,6 +3,7 @@ Notable applications in use:
  - nwg-hello (a greeter for greetd, the thing that provides the gui)
     (note: right now I am not using nwg-hello, instead I have greetd just launch hyprland directly as my user Cole and then enable hyprlock at startup)
  - rofi (for launching applications)
+   - Got rofi themes from https://github.com/adi1090x/rofi
  - hyprshell (provides alt-tab and windows-tab like functionality)
  - nautilus (the primary file explorer, the one I have found I like the best)
  - waybar (provides the bar at the top of the screen)
