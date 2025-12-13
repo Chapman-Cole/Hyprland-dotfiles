@@ -2,6 +2,8 @@ Notable applications in use:
  - greetd (similar to SDDM or GDM, but just launches into gui)
  - nwg-hello (a greeter for greetd, the thing that provides the gui)
     (note: right now I am not using nwg-hello, instead I have greetd just launch hyprland directly as my user Cole and then enable hyprlock at startup)
+  - nwg-look (handles gtk theming)
+     - I use the catpuccin mauve theme
  - rofi (for launching applications)
    - Got rofi themes from https://github.com/adi1090x/rofi
  - hyprshell (provides alt-tab and windows-tab like functionality)
