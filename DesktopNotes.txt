@@ -1,0 +1,14 @@
+Notable applications in use:
+ - greetd (similar to SDDM or GDM, but just launches into gui)
+ - nwg-hello (a greeter for greetd, the thing that provides the gui)
+    (note: right now I am not using nwg-hello, instead I have greetd just launch hyprland directly as my user Cole and then enable hyprlock at startup)
+ - rofi (for launching applications)
+ - hyprshell (provides alt-tab and windows-tab like functionality)
+ - nautilus (the primary file explorer, the one I have found I like the best)
+ - waybar (provides the bar at the top of the screen)
+ - hyprlock (provides the lock screen for hyprland, separate from nwg-hello)
+ - xdg-desktop-portal (provides varied functionality for many apps)
+ - hyprland (the wayland compositor)
+ - yay (allows me to install packages from the arch user repository)
+ - kitty (the terminal emulator I like to use)
+ - Note: sometimes it is necessary to modify the .desktop files in order to launch natively with wayland (usually adding something like --ozone). This fixs certain issues with popup windows
