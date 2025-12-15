@@ -15,3 +15,18 @@ Notable applications in use:
  - yay (allows me to install packages from the arch user repository)
  - kitty (the terminal emulator I like to use)
  - Note: sometimes it is necessary to modify the .desktop files in order to launch natively with wayland (usually adding something like --ozone). This fixs certain issues with popup windows
+ - kvantum (used to manage qt themes)
+ - qt5ct and qt6ct-kde (the latter is from yay) to manage the themes
+ - celluloid (a nice looking GTK based video player, uses mpv as a backend)
+ - mpv (the video backend for celluloid)
+ - hyprshot (handles screenshots)
+ - OCR4linux (allows for recognition of words and numbers from a screenshot)
+ - my favorite theme for GTK and qt: catpuccin-macchiato-mauve
+ - qt5-wayland and qt6-wayland are also good ideas to download
+ - Gnome text editor is a good, simple text editor
+ - xdg-user-dirs (creates the basic desktop folders like picures, downloads, etc.)
+ - xdg-desktop-portal-hyprland (manages a lot of important stuff)
+ - gnome-keyring
+ - pipewire and its derivaties
+ - network-manager
+ - os-prober for dual booting with windows
