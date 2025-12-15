@@ -30,3 +30,4 @@ Notable applications in use:
  - pipewire and its derivaties
  - network-manager
  - os-prober for dual booting with windows
+ - For github-desktop, launch with github-desktop --disable-gpu in order to make it open faster on wayland
