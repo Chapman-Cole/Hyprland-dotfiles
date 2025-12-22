@@ -31,3 +31,4 @@ Notable applications in use:
  - network-manager
  - os-prober for dual booting with windows
  - For github-desktop, launch with github-desktop --disable-gpu in order to make it open faster on wayland
+ - In order to get rid of the logging that shows on startup, just modify the greetd config.toml so that it routes the output of Hyprland call to a file
